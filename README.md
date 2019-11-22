@@ -5,8 +5,21 @@ Repository of reusable configuration for Travis CI
 <!-- status badges -->
 [![Build Status][ci-badge]][ci-link]
 
+## Usage
+
 <!-- consumer badges -->
 [![MIT license][license-badge]][license-link]
+
+### Importing into other GainCompliance projects
+
+All configs in this repository can be [imported](https://docs.travis-ci.com/user/build-config-imports)
+into the configuration of projects within the `GainCompliance` organization.
+This includes the configs prefixed with `authenticated-` because the
+[shared encrypted secrets](https://docs.travis-ci.com/user/build-config-imports#sharing-encrypted-secrets)
+are accessible across the organization.
+
+:warning: Be sure to use the correct casing of `GainCompliance` in the import
+statement. Failing to do so will prevent the import from working.
 
 ## Contributing
 
