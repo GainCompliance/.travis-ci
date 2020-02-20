@@ -1,0 +1,4 @@
+import:
+  - npm-token-publish-env.yml
+  - gh-token-env.yml
+  - form8ion/.travis-ci:semantic-release-stage.yml
