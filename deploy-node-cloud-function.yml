@@ -1,0 +1,14 @@
+cache:
+  directories:
+    - "$HOME/google-cloud-sdk/"
+
+deploy:
+  - provider: script
+    script: npm run deploy
+    edge: true
+
+env:
+  global:
+    - PATH=$PATH:${HOME}/google-cloud-sdk/bin
+    - GAE_LIB_ROOT="${HOME}/google-cloud-sdk/platform/google_appengine"
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
